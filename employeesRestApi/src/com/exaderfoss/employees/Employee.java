@@ -1,9 +1,9 @@
-package org.coenraets.directory;
+package com.exaderfoss.employees;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * @author Christophe Coenraets
+ * @author ragz
  */
 @XmlRootElement
 public class Employee {

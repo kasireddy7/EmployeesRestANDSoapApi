@@ -1,4 +1,4 @@
-package org.coenraets.directory;
+package com.exaderfoss.employees;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

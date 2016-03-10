@@ -2,24 +2,24 @@
 <html>
 <head>
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-<title>Employee Directory</title>
+<title>Employee Rest Api</title>
 </head>
 
 <body>
 
-<!-- 	<p>
-		<a href="http://localhost:8080/EmployeeDirectoryJAXRS/rest/employees">http://reddy.org/rest/employees</a>
+ 	<p>
+		<a href="http://localhost:8080/employeesRestApi/rest/employees/getAllEmployees">http://reddy.org/rest/employees</a>
 	</p>
 	<p>
 		<a
-			href="http://localhost:8080/EmployeeDirectoryJAXRS/rest/employees/1">http://reddy.org/rest/employees/1</a>
+			href="http://localhost:8080/employeesRestApi/rest/employees/1">http://reddy.org/rest/employees/1</a>
 	</p>
 	<p>
 		<a
-			href="http://localhost:8080/EmployeeDirectoryJAXRS/rest/employees/1/reports">http://reddy.org/rest/employees/1/reports</a>
+			href="http://localhost:8080/employeesRestApi/rest/employees/1/reports">http://reddy.org/rest/employees/1/reports</a>
 	</p>
 
- -->
+ 
 	
     	
     	
@@ -63,10 +63,11 @@
 			    "email": document.forms["employeeForm"]["email"].value,
 			    "picture": document.forms["employeeForm"]["picture"].value
 		};
+		
 		// convert JSON to string
 		var jsonString = JSON.stringify(jsonObj);
 		 $.ajax({
-		        url: "http://localhost:8080/EmployeeDirectoryJAXRS/rest/employees/save",
+		        url: "http://localhost:8080/employeesRestApi/rest/employees/save",
 		        type: "POST",
 		        headers: {"Content-Type":"application/json"},
 		        data: jsonString,

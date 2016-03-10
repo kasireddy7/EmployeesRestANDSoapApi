@@ -1,4 +1,4 @@
-package org.coenraets.directory;
+package com.exaderfoss.employees;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,7 +16,7 @@ public class ConnectionHelper
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			url = "jdbc:mysql://localhost/restdemo?user=root&password=root123";
-            ResourceBundle bundle = ResourceBundle.getBundle("directory");
+            ResourceBundle bundle = ResourceBundle.getBundle("employees");
             driver = bundle.getString("jdbc.driver");
             Class.forName(driver);
             url=bundle.getString("jdbc.url");
