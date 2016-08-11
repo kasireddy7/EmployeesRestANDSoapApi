@@ -8,5 +8,6 @@ public class OrdersClient {
 		EmployeeWebServiceService employeeWebServiceService = new EmployeeWebServiceService() ;
 		EmployeeWebService employeeWebService = employeeWebServiceService.getEmployeeWebServicePort();
 		System.out.println(employeeWebService.getAllEmployees());
+		//test
 	}
 }
