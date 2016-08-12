@@ -9,5 +9,6 @@ public class OrdersClient {
 		EmployeeWebService employeeWebService = employeeWebServiceService.getEmployeeWebServicePort();
 		System.out.println(employeeWebService.getAllEmployees());
 		//test
+		//test2
 	}
 }
